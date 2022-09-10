@@ -4,7 +4,8 @@
   "description": "vite plugin power by node-ssh",
   "main": "dist/main.js",
   "scripts": {
-    "build": "rm -rf dist/ && tsup src/main.ts --dts --no-splitting"
+    "build": "rm -rf dist/ && tsup src/main.ts --dts --no-splitting",
+    "release": "standard-version"
   },
   "keywords": [
     "vite",
@@ -17,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/ssh2": "^1.11.5",
+    "standard-version": "^9.5.0",
     "tsup": "^6.2.3",
     "typescript": "^4.8.3",
     "vite": "^3.1.0"
